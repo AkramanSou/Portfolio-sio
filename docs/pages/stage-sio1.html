@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage SIO1</title>
+    
+    <!-- Favicons :-->
+    <link rel="icon" type="image/png" sizes="16x16" href="../theme/logo/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../theme/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../theme/logo/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../theme/logo/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../theme/logo/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../theme/logo/favicon-512x512.png">
+    <link rel="shortcut icon" href="../theme/logo/favicon.ico">
+
+    <!-- IMPORTS DES BIBLIOTHEQUES (CSS, FONTS, ICONS) : -->
+    
+    <!-- Bootstrap CSS : --> 
+    <link rel="stylesheet" href="../theme/vendor/bootstrap/css/bootstrap.min.css">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="../theme/vendor/bootstrap-icons/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../theme/vendor/fontawesome/css/all.min.css">
+
+    
+    <!-- STYLES CSS PERSONNEL : -->   
+    <link rel="stylesheet" href="../theme/css/custom.css">
+
+</head>
+
+<body class="m-0 p-0">
+    <!-- INCLUSION DU HEADER : -->
+
+<!-- -------- -->
+<!-- HEADER : -->
+<!-- -------- -->
+
+
+<header class="container-fluid py-2 background-header">
+
+<div class="container">
+    <div class="row">
+        <!-- Logo : -->
+        <div class="col-md-4 m-0 p-0 align-content-center text-center">
+            <a href="../" title="Page d'accueil" class="navbar-brand">
+                <img src="../theme/logo/logo_PBS-teal.png" alt="logo du portfolio" style="height: 80px;">
+            </a>
+        </div>
+
+        <div class="col-8 m-0 p-0 align-content-center text-center d-none d-md-block">
+            <!-- Titre principal : -->
+            <h1 class="m-0 p-0 ">Portfolio BTS SIO SLAM</h1>
+
+
+            <!-- Titre secondaire : -->
+            <p class="m-0 p-0">
+                <i>Mon parcours de formation</i>
+            </p>
+
+        </div>
+    </div>
+
+</div>
+    
+</header>
+
+
+<!-- NAVBAR : -->
+<div class="container-fluid m-0 p-0 sticky-top bg-dark shadow">
+
+
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container ms-2 ps-1 mx-lg-auto px-lg-0">            
+..
+            <!-- Bouton dévellopement menu en mode collapsé : -->
+            <div class="me-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Eléments de navigation : -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav nav-underline ms-4 ms-md-0  mb-md-0 mt-4 mt-md-0 fw-bold">
+                        <li class="nav-item ">
+                            <a  class="nav-link py-0  "
+                                title="Page d'accueil du portefolio"
+                                href="../"
+                            >
+                            <i  class="bi bi-house d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                                Accueil
+                            </a>
+                            
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a  class="nav-link py-0  dropdown-toggle"
+                                title="Découvrez mon parcours scolaire et professionnel."
+                                href="../pages/parcours"
+ data-bs-toggle="dropdown"  aria-expanded="false"                             >
+                            <i  class="bi bi-mortarboard d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                                Mon parcours
+                            </a>
+                            
+                                <ul class="dropdown-menu bg-dark-subtle">
+                                        <li><a class="dropdown-item" href="../pages/parcours-scolaire">Parcours scolaire</a></li>
+                                        <li><a class="dropdown-item" href="../pages/bts-sio">Le BTS SIO</a></li>
+                                </ul> 
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a  class="nav-link py-0  dropdown-toggle"
+                                title="Accédez aux projets et TP réalisés pendant ma formation et à mes projets personnels."
+                                href="../pages/realisations"
+ data-bs-toggle="dropdown"  aria-expanded="false"                             >
+                            <i  class="bi bi-check2-square d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                                Réalisations
+                            </a>
+                            
+                                <ul class="dropdown-menu bg-dark-subtle">
+                                        <li><a class="dropdown-item" href="../pages/tp-majeurs">TP majeurs</a></li>
+                                        <li><a class="dropdown-item" href="../pages/stage-sio1">Stage de 1ère année</a></li>
+                                        <li><a class="dropdown-item" href="../pages/stage-sio2">Stage de 2e année</a></li>
+                                        <li><a class="dropdown-item" href="../pages/projets-scolaires">Projets scolaires</a></li>
+                                        <li><a class="dropdown-item" href="../pages/projets-personnels">Projets personnels</a></li>
+                                        <li><a class="dropdown-item" href="../pages/certifications-complementaires">Certifications complémentaires</a></li>
+                                </ul> 
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a  class="nav-link py-0  dropdown-toggle"
+                                title="Consultez les articles de veille technologique que j’ai suivis durant cette année."
+                                href="../ma-veille"
+ data-bs-toggle="dropdown"  aria-expanded="false"                             >
+                            <i  class="bi bi-broadcast-pin d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                                Veille techno.
+                            </a>
+                            
+                                <ul class="dropdown-menu bg-dark-subtle">
+                                        <li><a class="dropdown-item" href="../ma-veille">Ma veille technologique</a></li>
+                                        <li><a class="dropdown-item" href="../archives">Archive des articles</a></li>
+                                        <li><a class="dropdown-item" href="../categories">Liste des catégories</a></li>
+                                        <li><a class="dropdown-item" href="../authors">Liste des auteurs</a></li>
+                                        <li><a class="dropdown-item" href="../tags">Liste des mots clés</a></li>
+                                </ul> 
+                        </li>
+                        <li class="nav-item ">
+                            <a  class="nav-link py-0  "
+                                title="Présention de mon engagement étudiant."
+                                href="../pages/engagement-etudiant"
+                            >
+                            <i  class="bi bi-people-fill d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                                Engagement
+                            </a>
+                            
+                        </li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+    </nav>       </div>
+    <main class="container mt-5 p-0 min-vh-100">
+        <!-- BLOCK POUR L'INSERTION DU CONTENU : -->
+
+  <!-- <h1>Stage SIO1</h1> -->
+  <blockquote>
+<p><strong><u>FICHE DESCRIPTIVE :</u></strong></p>
+<p><u><strong>Dates du stage :</strong></u></p>
+<ul>
+<li><strong>Date début :</strong> 19/05/2025</li>
+<li><strong>Date fin :</strong> 27/06/2025</li>
+</ul>
+<p><strong>Association sportive :</strong> Club de judo de l'Almont</p>
+</blockquote>
+<h1>Présentation de l'association  :</h1>
+<p>Le <strong>Club de Judo de l’Almont</strong> est une <strong>association sportive</strong> située à <strong>Melun</strong>, dans le quartier de <strong>l’Almont</strong>.<br>
+Il propose des <strong>cours de judo accessibles à tous les publics</strong> : enfants, adolescents et adultes, qu’ils soient <strong>débutants ou confirmés</strong>.</p>
+<hr>
+<h3>👨‍🏫 Encadrement et valeurs</h3>
+<p>Encadré par des <strong>enseignants diplômés et expérimentés</strong>, le club a pour objectif de transmettre les <strong>techniques du judo</strong>, tout en mettant en avant les <strong>valeurs fondamentales</strong> de cette discipline :</p>
+<ul>
+<li>🥋 Respect  </li>
+<li>🧘 Maîtrise de soi  </li>
+<li>🤝 Entraide  </li>
+<li>💪 Persévérance</li>
+</ul>
+<hr>
+<h3>🤼‍♂️ Entraînements et progression</h3>
+<p>Le club accueille ses membres dans un <strong>cadre structuré et convivial</strong>, favorisant à la fois :</p>
+<ul>
+<li>Le <strong>développement personnel</strong></li>
+<li>La <strong>progression sportive</strong></li>
+</ul>
+<p>Les séances sont <strong>adaptées selon les niveaux et les objectifs</strong>, qu’il s’agisse d’une <strong>pratique de loisir</strong> ou d’une <strong>préparation à la compétition</strong>.</p>
+<hr>
+<h3>📅 Vie du club</h3>
+<p>En plus des entraînements réguliers, le club organise ponctuellement :<br>
+- Des <strong>événements internes</strong><br>
+- Des <strong>stages de perfectionnement</strong><br>
+- Des <strong>participations à des compétitions</strong></p>
+<p>Ces activités contribuent à <strong>la dynamique locale</strong> et renforcent <strong>la cohésion entre les judokas</strong>.</p>
+<hr>
+<h1>Missions &amp; tâches réalisés :</h1>
+<p>Pendant ce stage, <strong>deux missions principales</strong> m’ont été confiées : une mission orientée <strong>gestion administrative</strong> via un outil Excel, et une autre orientée <strong>développement web</strong> pour la mise à jour du site du club.</p>
+<p>L’objectif global était de contribuer à l’amélioration de la gestion interne et de la communication du club.</p>
+<hr>
+<h2>✅ Mission 1 : Création d’un fichier Excel de gestion des inscriptions</h2>
+<h3>🎯 Objectif</h3>
+<p>Mettre en place un outil simple et efficace permettant de gérer les inscriptions des membres du club.</p>
+<h3>🛠️ Tâches réalisées</h3>
+<ul>
+<li>Analyse des besoins du club pour le suivi des adhérents.  </li>
+<li>Création d’un fichier <strong>Excel</strong> structuré pour enregistrer les informations des licenciés (<em>nom, prénom, âge, sexe, date d’inscription, type de licence, etc.</em>).  </li>
+<li>Mise en place de <strong>filtres</strong> et de <strong>fonctions simples</strong> pour faciliter la recherche d’information.  </li>
+<li>Automatisation partielle de certains champs (<em>formules, listes déroulantes…</em>).</li>
+</ul>
+<h3>💡 Compétences mobilisées</h3>
+<ul>
+<li>Maîtrise d’<strong>Excel</strong> (formules, mise en forme conditionnelle, filtres).  </li>
+<li>Compréhension des besoins utilisateurs.  </li>
+<li>Rigueur dans la gestion de données personnelles.</li>
+</ul>
+<hr>
+<h2>✅ Mission 2 : Développement d’un outil de mise à jour d’articles sur le site web du club</h2>
+<h3>🎯 Objectif</h3>
+<p>Permettre au président du club de <strong>publier facilement des articles</strong> et actualités sur la page d’accueil du site internet.</p>
+<h3>🛠️ Tâches réalisées</h3>
+<ul>
+<li>Analyse du fonctionnement du site existant (<em>technologies utilisées</em>).  </li>
+<li>Création d’un <strong>espace d’administration</strong> simple permettant l’ajout, la modification et la suppression d’articles.  </li>
+<li>Intégration du système au site principal (<em>HTML, CSS, PHP ou JavaScript selon le besoin</em>).  </li>
+<li>Tests et validation avec l’utilisateur final (<em>le président du club</em>).</li>
+</ul>
+<h3>💡 Compétences mobilisées</h3>
+<ul>
+<li>Développement web (<strong>HTML, CSS, PHP/JavaScript</strong>).  </li>
+<li>Gestion de contenu dynamique.  </li>
+<li>Travail en autonomie et <strong>communication avec un utilisateur non technique</strong>.</li>
+</ul>
+<hr>
+<h2>🧾 Bilan du stage</h2>
+<p>Ce stage m’a permis de mettre en pratique mes compétences en <strong>bureautique</strong> et en <strong>développement web</strong> dans un contexte concret. J’ai également appris à :
+- M’adapter aux besoins d’un client non technique.
+- Organiser mon travail de façon autonome.
+- Produire des livrables utiles et directement exploitables.</p>
+<p>Ces deux missions ont renforcé ma capacité à <strong>analyser une demande</strong>, <strong>proposer une solution technique adaptée</strong>, et <strong>la mettre en œuvre efficacement</strong>.</p>
+<hr>
+    
+    </main>
+
+    <!-- INCLUSION DU FOOTER : -->
+
+
+<footer class="text-center mt-4 mb-0 bg-dark text-light">
+    <small>&copy; 2025 - Portfolio BTS SIO</small>
+</footer>
+    <script src="../theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../theme/js/custom.js"></script>
+</body>
+</html>

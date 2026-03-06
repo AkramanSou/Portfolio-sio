@@ -1,130 +1,533 @@
+/*
+______________________________________________
+
+    IMPORT DES POLICES GOOGLE FONTS
+______________________________________________
+*/
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
 /*
 ______________________________________________
 
-	DEFINITIONS DES CONSTANTES DE STYLES 
+    VARIABLES GLOBALES
 ______________________________________________
 */
-
 :root {
+    --navy:        #0a1628;
+    --navy-mid:    #112240;
+    --navy-light:  #1d3461;
+    --accent:      #4a9eff;
+    --accent-glow: rgba(74, 158, 255, 0.25);
+    --white:       #f0f4ff;
+    --white-soft:  rgba(240, 244, 255, 0.85);
+    --text-muted:  rgba(240, 244, 255, 0.55);
+    --card-bg:     rgba(255, 255, 255, 0.04);
+    --card-border: rgba(74, 158, 255, 0.18);
+    --radius:      14px;
+    --transition:  0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    /*
-    Style sur les polices :
-    -----------------------
-    */
-    /* --typo-generale: 'Fira Sans', 'Open Sans'; */
-
-    /* Polices titres & sous-titre : */
-    /* --typo-titres:  'Kanit', 'Exo 2'; */
-
-
-    /*
-    Style sur les couleurs :
-    ------------------------
-    */
-
-    /* --navbar-brand-couleur: rgb(255, 166, 0); */
-    --nav-link: white;
-    --nav-link-active: rgb(255, 209, 5);
-
-
-    /* Redéfinition des couleurs de Bootstrap :*/
-    /* --bs-warning: rgb(255, 166,  0);
-    --bs-warning-rgb: 255, 166, 0;
-
-    --bs-warning-bg-subtle: rgb(250, 240, 100);
-    --bs-warning-border-subtle: rgb(250, 240, 100); */
-
+    --nav-link: var(--white);
+    --nav-link-active: var(--accent);
 }
 
-
-
 /*
-________________________________________________
+______________________________________________
 
-	DEFINITION DES PROPRIETES DES CLASSES CSS
-________________________________________________
+    RESET & BASE
+______________________________________________
 */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
-/*
-----------------------
-PROPRIETES GENERALES :
-----------------------
-*/
+html {
+    scroll-behavior: smooth;
+}
 
-/*
-Définition du fond :
---------------------
-*/
 body {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(238, 129, 4, 0.911));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; /*contain*/ 
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--navy);
+    background-image:
+            radial-gradient(ellipse 80% 60% at 20% 10%, rgba(74, 158, 255, 0.12) 0%, transparent 60%),
+            radial-gradient(ellipse 60% 50% at 80% 80%, rgba(29, 52, 97, 0.6) 0%, transparent 60%);
     background-attachment: fixed;
-  }
-
-
-  /*
-PROPRIETES SUR LE HEADER & NAVBAR :
------------------------------------
-*/
-
-/*
-Définition du fond du header :
-------------------------------
-*/
-
-.background-header {
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.95)), url('../backgrounds/header_background.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; /*contain*/ 
-    background-image: url('../logo/soleil.jpg');
-  }
-
-/*
-Couleur des éléments de navigations :
--------------------------------------
-*/
-
-.navbar {
-    font-size: 0.8em;
+    background-size: cover;
+    min-height: 100vh;
 }
 
-.nav-link-icon {
-    font-size: 1.5em;
+h1, h2, h3, h4, h5 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+a {
+    color: var(--accent);
+    transition: color var(--transition);
+}
+
+a:hover {
+    color: var(--white);
+}
+
+hr {
+    border-color: var(--card-border);
+    opacity: 1;
+    margin: 2rem 0;
+}
+
+/*
+______________________________________________
+
+    HEADER
+______________________________________________
+*/
+.background-header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, var(--navy-light) 100%);
+    border-bottom: 1px solid var(--card-border);
+    padding: 1.5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 100% at 50% 0%, rgba(74, 158, 255, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.background-header h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.03em;
+    text-shadow: 0 0 40px rgba(74, 158, 255, 0.4);
+    margin: 0;
+}
+
+.background-header p {
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.9rem;
+    margin: 0.25rem 0 0;
+}
+
+/*
+______________________________________________
+
+    NAVBAR
+______________________________________________
+*/
+.navbar {
+    background: rgba(10, 22, 40, 0.92) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--card-border);
+    font-family: 'Sora', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
 }
 
 .nav-link {
-    color: var(--nav-link);
+    color: var(--text-muted) !important;
+    transition: color var(--transition), transform var(--transition);
+    padding: 0.4rem 0.75rem !important;
+    position: relative;
 }
 
-.nav-link:hover, .dropdown-item:hover {
-    color: var(--bs-warning);
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 80%;
+    height: 2px;
+    background: var(--accent);
+    border-radius: 2px;
+    transition: transform var(--transition);
 }
 
-.nav-link:active {
-    color: black;
+.nav-link:hover {
+    color: var(--white) !important;
 }
 
+.nav-link:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.nav-link-icon {
+    font-size: 1.3em;
+    display: block;
+    text-align: center;
+    color: var(--accent);
+    margin-bottom: 0.1rem;
+}
 
 .navbar-nav .nav-item .active {
-    color: var(--nav-link-active);
-  }
+    color: var(--accent) !important;
+}
 
+.dropdown-menu {
+    background: var(--navy-mid) !important;
+    border: 1px solid var(--card-border) !important;
+    border-radius: var(--radius) !important;
+    padding: 0.5rem !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+}
 
 .dropdown-item {
-    font-weight: bold;
-    color: black;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    color: var(--white-soft) !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 0.85rem !important;
+    transition: background var(--transition), color var(--transition) !important;
+}
+
+.dropdown-item:hover {
+    background: var(--accent-glow) !important;
+    color: var(--accent) !important;
 }
 
 .dropdown-item:active {
-    background-color: var(--navbar-brand-couleur);
-    color: white;
+    background: var(--accent) !important;
+    color: var(--navy) !important;
 }
 
-
 .navbar-toggler {
-    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid var(--card-border) !important;
+    background: var(--card-bg) !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/*
+______________________________________________
+
+    MAIN CONTENT
+______________________________________________
+*/
+main.container {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem;
+}
+
+/*
+______________________________________________
+
+    CARDS (PAGE D'ACCUEIL)
+______________________________________________
+*/
+.card {
+    background: var(--card-bg) !important;
+    border: 1px solid var(--card-border) !important;
+    border-radius: var(--radius) !important;
+    backdrop-filter: blur(10px);
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition) !important;
+    overflow: hidden;
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0;
+    transition: opacity var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 30px var(--accent-glow) !important;
+    border-color: var(--accent) !important;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card-title {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    color: var(--white) !important;
+    font-size: 1.1rem;
+}
+
+.card-text {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.card-body {
+    padding: 2rem 1.5rem !important;
+}
+
+/* Icônes des cartes */
+.card .bi {
+    color: var(--accent) !important;
+    filter: drop-shadow(0 0 8px var(--accent-glow));
+}
+
+/* Boutons des cartes */
+.btn-outline-primary,
+.btn-outline-success,
+.btn-outline-warning,
+.btn-outline-info,
+.btn-outline-danger {
+    border-color: var(--accent) !important;
+    color: var(--accent) !important;
+    border-radius: 8px !important;
+    font-family: 'Sora', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.4rem 1.2rem !important;
+    transition: all var(--transition) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-success:hover,
+.btn-outline-warning:hover,
+.btn-outline-info:hover,
+.btn-outline-danger:hover {
+    background: var(--accent) !important;
+    border-color: var(--accent) !important;
+    color: var(--navy) !important;
+    box-shadow: 0 4px 20px var(--accent-glow) !important;
+}
+
+/*
+______________________________________________
+
+    TEXTE D'ACCUEIL
+______________________________________________
+*/
+.text-center.py-5 h1 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    color: var(--white);
+    position: relative;
+    display: inline-block;
+}
+
+.text-center.py-5 h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 3px;
+    margin: 0.75rem auto 0;
+    box-shadow: 0 0 12px var(--accent-glow);
+}
+
+.text-center.py-5 p {
+    color: var(--text-muted);
+    max-width: 680px;
+    margin: 1rem auto 0;
+    line-height: 1.7;
+}
+
+/*
+______________________________________________
+
+    PAGES DE CONTENU (STAGES, PARCOURS, etc.)
+______________________________________________
+*/
+blockquote {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-left: 4px solid var(--accent) !important;
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    margin: 0 0 2.5rem;
+    backdrop-filter: blur(6px);
+}
+
+blockquote p {
+    color: var(--white-soft);
+    margin-bottom: 0.5rem;
+}
+
+blockquote ul {
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
+/* Titres de section */
+main h1 {
+    font-size: 1.8rem;
+    color: var(--white);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--card-border);
+}
+
+main h2 {
+    font-size: 1.3rem;
+    color: var(--white);
+    margin-top: 2rem;
+    padding: 0.75rem 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius);
+}
+
+main h3 {
+    font-size: 1rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+main p, main li {
+    color: var(--white-soft);
+    line-height: 1.75;
+}
+
+main ul {
+    padding-left: 1.5rem;
+}
+
+main ul li::marker {
+    color: var(--accent);
+}
+
+main strong {
+    color: var(--white);
+    font-weight: 600;
+}
+
+main em {
+    color: var(--text-muted);
+}
+
+/*
+______________________________________________
+
+    FOOTER
+______________________________________________
+*/
+footer {
+    background: var(--navy-mid) !important;
+    border-top: 1px solid var(--card-border);
+    padding: 1.5rem 0;
+    color: var(--text-muted) !important;
+    font-family: 'Sora', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+}
+
+footer small {
+    color: var(--text-muted);
+}
+
+/*
+______________________________________________
+
+    ANIMATIONS D'APPARITION
+______________________________________________
+*/
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Header animé */
+.background-header {
+    animation: fadeIn 0.6s ease both;
+}
+
+/* Cards animées avec délai décalé */
+.card {
+    animation: fadeInUp 0.5s ease both;
+}
+
+.col-md-4:nth-child(1) .card { animation-delay: 0.1s; }
+.col-md-4:nth-child(2) .card { animation-delay: 0.25s; }
+.col-md-4:nth-child(3) .card { animation-delay: 0.4s; }
+
+/* Contenu principal animé */
+main > * {
+    animation: fadeInUp 0.5s ease both;
+}
+
+main > *:nth-child(1) { animation-delay: 0.05s; }
+main > *:nth-child(2) { animation-delay: 0.1s; }
+main > *:nth-child(3) { animation-delay: 0.15s; }
+main > *:nth-child(4) { animation-delay: 0.2s; }
+main > *:nth-child(5) { animation-delay: 0.25s; }
+
+/*
+______________________________________________
+
+    SCROLLBAR PERSONNALISÉE
+______________________________________________
+*/
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--navy);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--navy-light);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
+/*
+______________________________________________
+
+    RESPONSIVE
+______________________________________________
+*/
+@media (max-width: 768px) {
+    .background-header h1 {
+        font-size: 1.3rem;
+    }
+
+    main.container {
+        padding-top: 1.5rem !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .card-body {
+        padding: 1.5rem 1rem !important;
+    }
 }

@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 et le responsive design en 2025</title>
+    
+    <!-- Favicons :-->
+    <link rel="icon" type="image/png" sizes="16x16" href="../theme/logo/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../theme/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../theme/logo/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../theme/logo/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../theme/logo/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../theme/logo/favicon-512x512.png">
+    <link rel="shortcut icon" href="../theme/logo/favicon.ico">
+
+    <!-- IMPORTS DES BIBLIOTHEQUES (CSS, FONTS, ICONS) : -->
+    
+    <!-- Bootstrap CSS : --> 
+    <link rel="stylesheet" href="../theme/vendor/bootstrap/css/bootstrap.min.css">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="../theme/vendor/bootstrap-icons/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../theme/vendor/fontawesome/css/all.min.css">
+
+    
+    <!-- STYLES CSS PERSONNEL : -->   
+    <link rel="stylesheet" href="../theme/css/custom.css">
+
+</head>
+
+<body class="m-0 p-0">
+    <!-- INCLUSION DU HEADER : -->
+
+<!-- -------- -->
+<!-- HEADER : -->
+<!-- -------- -->
+
+<header class="container-fluid py-4 background-header">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 text-center">
+
+                <!-- Badge BTS SIO -->
+                <span class="header-badge">BTS SIO SLAM · 2ème année</span>
+
+                <!-- Nom principal -->
+                <h1 class="header-name m-0 mt-2">
+                    Akraman <span class="header-name-accent">Souleimanov</span>
+                </h1>
+
+                <!-- Sous-titre -->
+                <p class="header-subtitle m-0 mt-2">
+                    <i>Mon parcours de formation</i>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- NAVBAR : -->
+<div class="container-fluid m-0 p-0 sticky-top bg-dark shadow">
+
+
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="container ms-2 ps-1 mx-lg-auto px-lg-0">            
+..
+            <!-- Bouton dévellopement menu en mode collapsé : -->
+            <div class="me-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Eléments de navigation : -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav nav-underline mx-auto mb-md-0 mt-4 mt-md-0 fw-bold">
+                        <li class="nav-item ">
+                            <a  class="nav-link py-0  "
+                                title="Page d'accueil du portefolio"
+                                href="../"
+                            >
+                            <i  class="bi bi-house d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                                Accueil
+                            </a>
+                            
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a  class="nav-link py-0  dropdown-toggle"
+                                title="Découvrez mon parcours scolaire et professionnel."
+                                href="../pages/parcours"
+ data-bs-toggle="dropdown"  aria-expanded="false"                             >
+                            <i  class="bi bi-mortarboard d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                                Mon parcours
+                            </a>
+                            
+                                <ul class="dropdown-menu bg-dark-subtle">
+                                        <li><a class="dropdown-item" href="../pages/parcours-scolaire">Parcours scolaire</a></li>
+                                        <li><a class="dropdown-item" href="../pages/bts-sio">Le BTS SIO</a></li>
+                                </ul> 
+                        </li>
+                        <li class="nav-item ">
+                            <a  class="nav-link py-0  "
+                                title="Consulter mon CV."
+                                href="../pages/cv"
+                            >
+                            <i  class="bi bi-file-earmark-person d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                                Mon CV
+                            </a>
+                            
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a  class="nav-link py-0  dropdown-toggle"
+                                title="Accédez aux projets et TP réalisés pendant ma formation et à mes projets personnels."
+                                href="../pages/realisations"
+ data-bs-toggle="dropdown"  aria-expanded="false"                             >
+                            <i  class="bi bi-check2-square d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                                Réalisations
+                            </a>
+                            
+                                <ul class="dropdown-menu bg-dark-subtle">
+                                        <li><a class="dropdown-item" href="../pages/tp-majeurs">TP majeurs</a></li>
+                                        <li><a class="dropdown-item" href="../pages/stage-sio1">Stage de 1ère année</a></li>
+                                        <li><a class="dropdown-item" href="../pages/stage-sio2">Stage de 2e année</a></li>
+                                </ul> 
+                        </li>
+                        <li class="nav-item ">
+                            <a  class="nav-link py-0  "
+                                title="Consultez les articles de veille technologique que j'ai suivis durant cette année."
+                                href="../ma-veille"
+                            >
+                            <i  class="bi bi-broadcast-pin d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
+                                Veille techno.
+                            </a>
+                            
+                        </li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+    </nav>       </div>
+    <main class="container mt-5 p-0 min-vh-100">
+        <!-- BLOCK POUR L'INSERTION DU CONTENU : -->
+<article class="mt-4">
+  <h1>Bootstrap 5 et le responsive design en 2025</h1>
+  <p class="text-muted">
+    Publié le 28/01/2026
+ | Tags :
+        <a href="../tag/bootstrap.html" class="badge bg-secondary">Bootstrap</a>
+        <a href="../tag/css.html" class="badge bg-secondary">CSS</a>
+        <a href="../tag/responsive.html" class="badge bg-secondary">responsive</a>
+        <a href="../tag/developpement-web.html" class="badge bg-secondary">développement-web</a>
+  </p>
+
+  <hr>
+
+  <div class="article-content">
+    <h2>Introduction</h2>
+<p>Bootstrap est un framework CSS open-source créé par Twitter en 2011. Aujourd'hui à sa version 5, il est utilisé par des millions de développeurs pour créer des interfaces web responsive, c'est-à-dire adaptées à toutes les tailles d'écran. En 2025, malgré la concurrence de Tailwind CSS, Bootstrap reste une référence incontournable.</p>
+<h2>Les fondamentaux de Bootstrap 5</h2>
+<p>Bootstrap 5 se distingue de sa version précédente par l'abandon total de jQuery, ce qui le rend plus léger et plus performant. Son système de grille basé sur Flexbox et CSS Grid permet de structurer des mises en page complexes en quelques lignes de code.</p>
+<p>Le framework propose également une large bibliothèque de composants prêts à l'emploi : navbars, cartes, modales, formulaires, boutons... Chaque composant est personnalisable via des variables CSS, ce qui facilite l'adaptation au design d'un projet.</p>
+<h2>Bootstrap vs Tailwind CSS</h2>
+<p>La grande rivalité de Bootstrap en 2025 est Tailwind CSS, un framework utilitaire qui adopte une approche radicalement différente. Là où Bootstrap fournit des composants complets, Tailwind propose des classes atomiques à combiner librement. Les deux ont leurs avantages : Bootstrap est plus rapide à prendre en main, Tailwind offre plus de flexibilité créative.</p>
+<h2>Mon expérience avec Bootstrap</h2>
+<p>J'utilise Bootstrap 5 dans mon portfolio BTS SIO pour gérer la mise en page responsive et les composants de navigation. C'est un outil que j'ai rapidement appris à maîtriser grâce à sa documentation claire et sa large communauté. Il m'a permis de me concentrer sur la logique et le contenu plutôt que de réinventer des composants de base.</p>
+<h2>Mon analyse</h2>
+<p>Bootstrap 5 reste un excellent choix pour des projets nécessitant un développement rapide et une compatibilité maximale. Pour un étudiant en développement web, le maîtriser est un atout réel sur le marché du travail, même si explorer Tailwind CSS en parallèle est désormais recommandé.</p>
+  </div>
+
+  <hr class="my-4">
+
+  <div class="d-flex justify-content-between">
+  </div>
+</article>
+    </main>
+
+    <!-- INCLUSION DU FOOTER : -->
+
+
+<footer class="text-center mt-4 mb-0 bg-dark text-light">
+    <small>&copy; 2026 - Portfolio BTS SIO</small>
+</footer>
+    <script src="../theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../theme/js/custom.js"></script>
+</body>
+</html>

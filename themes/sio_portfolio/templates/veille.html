@@ -3,17 +3,60 @@
 {% block title %}Veille Technologique{% endblock %}
 
 {% block content %}
-    <h1>Veille technologique</h1>
 
-      {{ page.content }}
+<!-- En-tête de la page -->
+<div class="veille-header mb-5">
+    <div class="d-flex align-items-center gap-3 mb-2">
+        <i class="bi bi-broadcast-pin veille-header-icon"></i>
+        <h1 class="veille-title m-0">Veille Technologique</h1>
+    </div>
+    <p class="veille-subtitle">{{ page.content if page else "Sélection d'articles et de ressources suivis durant ma formation en BTS SIO." }}</p>
+    <div class="veille-stats">
+        <span class="veille-stat-badge"><i class="bi bi-file-text me-1"></i>{{ articles|length }} article{{ 's' if articles|length > 1 }}</span>
+    </div>
+</div>
 
-    <ul class="list-group">
+<!-- Grille d'articles -->
+<div class="row g-4">
     {% for article in articles %}
-        <li class="list-group-item">
-            <h5><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h5>
-            <p><small>{{ article.date.strftime('%d/%m/%Y') }} | Tags : {{ article.tags|join(', ') }}</small></p>
-            <p>{{ article.summary }}</p>
-        </li>
+    <div class="col-md-6 col-lg-4">
+        <a href="{{ SITEURL }}/{{ article.url }}" class="veille-card-link">
+            <div class="veille-card h-100">
+
+                <!-- Barre de couleur en haut -->
+                <div class="veille-card-accent"></div>
+
+                <div class="veille-card-body">
+
+                    <!-- Tags -->
+                    <div class="veille-tags mb-2">
+                        {% for tag in article.tags %}
+                        <span class="veille-tag">#{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+
+                    <!-- Titre -->
+                    <h5 class="veille-card-title">{{ article.title }}</h5>
+
+                    <!-- Résumé -->
+                    <p class="veille-card-summary">{{ article.summary }}</p>
+
+                </div>
+
+                <!-- Footer de la carte -->
+                <div class="veille-card-footer">
+                    <span class="veille-date">
+                        <i class="bi bi-calendar3 me-1"></i>{{ article.date.strftime('%d/%m/%Y') }}
+                    </span>
+                    <span class="veille-read-more">
+                        Lire <i class="bi bi-arrow-right ms-1"></i>
+                    </span>
+                </div>
+
+            </div>
+        </a>
+    </div>
     {% endfor %}
-    </ul>
+</div>
+
 {% endblock %}

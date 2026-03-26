@@ -531,3 +531,229 @@ ______________________________________________
         padding: 1.5rem 1rem !important;
     }
 }
+
+/*
+______________________________________________
+
+    HEADER PERSONNALISÉ
+______________________________________________
+*/
+
+.header-badge {
+    display: inline-block;
+    background: var(--accent-glow);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-family: 'Sora', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    margin-bottom: 0.5rem;
+    animation: fadeInUp 0.5s ease both;
+}
+
+.header-name {
+    font-family: 'Sora', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    animation: fadeInUp 0.5s ease 0.1s both;
+}
+
+.header-name-accent {
+    color: var(--accent);
+    text-shadow: 0 0 30px var(--accent-glow);
+}
+
+.header-subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-style: italic;
+    animation: fadeInUp 0.5s ease 0.2s both;
+}
+
+.background-header {
+    padding: 2.5rem 0 !important;
+}
+
+/*
+______________________________________________
+
+    PAGE VEILLE TECHNOLOGIQUE
+______________________________________________
+*/
+
+/* En-tête */
+.veille-header {
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 1.5rem;
+}
+
+.veille-header-icon {
+    font-size: 2rem;
+    color: var(--accent);
+    filter: drop-shadow(0 0 10px var(--accent-glow));
+}
+
+.veille-title {
+    font-family: 'Sora', sans-serif;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.veille-subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0.5rem 0 1rem;
+    max-width: 600px;
+}
+
+.veille-stats {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.veille-stat-badge {
+    display: inline-flex;
+    align-items: center;
+    background: var(--accent-glow);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-family: 'Sora', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 0.25rem 0.85rem;
+    border-radius: 50px;
+}
+
+/* Lien carte (supprime le style de lien) */
+.veille-card-link {
+    text-decoration: none !important;
+    display: block;
+    height: 100%;
+}
+
+/* Carte article */
+.veille-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    animation: fadeInUp 0.5s ease both;
+}
+
+.veille-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 25px var(--accent-glow);
+    border-color: var(--accent);
+}
+
+/* Barre accent en haut */
+.veille-card-accent {
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), transparent);
+    opacity: 0;
+    transition: opacity var(--transition);
+}
+
+.veille-card:hover .veille-card-accent {
+    opacity: 1;
+}
+
+/* Corps de la carte */
+.veille-card-body {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+/* Tags */
+.veille-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.veille-tag {
+    font-family: 'Sora', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--accent-glow);
+    border: 1px solid rgba(74, 158, 255, 0.2);
+    padding: 0.15rem 0.6rem;
+    border-radius: 50px;
+    letter-spacing: 0.03em;
+}
+
+/* Titre de l'article */
+.veille-card-title {
+    font-family: 'Sora', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.4;
+    margin: 0.75rem 0 0.5rem;
+}
+
+/* Résumé */
+.veille-card-summary {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Footer de la carte */
+.veille-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.85rem 1.5rem;
+    border-top: 1px solid var(--card-border);
+    margin-top: auto;
+}
+
+.veille-date {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-family: 'Sora', sans-serif;
+}
+
+.veille-read-more {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent);
+    font-family: 'Sora', sans-serif;
+    transition: gap var(--transition);
+}
+
+.veille-card:hover .veille-read-more {
+    text-decoration: underline;
+}
+
+/* Délais d'animation décalés */
+.col-md-6:nth-child(1) .veille-card,
+.col-lg-4:nth-child(1) .veille-card { animation-delay: 0.05s; }
+.col-md-6:nth-child(2) .veille-card,
+.col-lg-4:nth-child(2) .veille-card { animation-delay: 0.15s; }
+.col-md-6:nth-child(3) .veille-card,
+.col-lg-4:nth-child(3) .veille-card { animation-delay: 0.25s; }
+.col-md-6:nth-child(4) .veille-card,
+.col-lg-4:nth-child(4) .veille-card { animation-delay: 0.35s; }
+.col-md-6:nth-child(5) .veille-card,
+.col-lg-4:nth-child(5) .veille-card { animation-delay: 0.45s; }
+.col-md-6:nth-child(6) .veille-card,
+.col-lg-4:nth-child(6) .veille-card { animation-delay: 0.55s; }

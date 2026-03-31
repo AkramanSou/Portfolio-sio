@@ -151,9 +151,117 @@
         <!-- BLOCK POUR L'INSERTION DU CONTENU : -->
 
   <!-- <h1>TP majeurs</h1> -->
-  <h1>Présentation des travaux pratiques ou mini-projets :</h1>
-<h2>Première année de BTS SIO :</h2>
-<h2>Seconde année de BTS SIO :</h2>
+  <h1>Présentation des travaux pratiques majeurs :</h1>
+<hr>
+<h2>🎓 Première année de BTS SIO</h2>
+<hr>
+<h2>✅ TP 1 – Gestion d'une base de données de pays</h2>
+<blockquote>
+<p><strong>FICHE DESCRIPTIVE :</strong></p>
+<ul>
+<li><strong>Sujet :</strong> Gestion d'une base de données de pays</li>
+<li><strong>Langages :</strong> PHP (PDO), HTML/CSS</li>
+<li><strong>Base de données :</strong> MySQL (tables <code>Country</code>, <code>City</code>)</li>
+</ul>
+<p><strong>Objectif :</strong> Manipuler et afficher des données issues d'une base relationnelle via des pages PHP dynamiques.</p>
+</blockquote>
+<h3>📋 Présentation</h3>
+<p>Ce TP consiste à créer une application web en PHP permettant de récupérer et afficher des données géographiques depuis une base MySQL. L'utilisateur peut naviguer entre les continents, consulter les pays et leurs informations (population, superficie, drapeau, capitale), et mettre à jour certaines données via un formulaire.</p>
+<h3>🛠️ Fonctionnalités principales</h3>
+<ul>
+<li>Affichage de la liste des <strong>continents</strong> et des <strong>pays</strong> associés</li>
+<li>Détail d'un pays : drapeau, population, superficie, capitale</li>
+<li><strong>Formulaire de mise à jour</strong> : modification de la population et de l'espérance de vie via une requête SQL <code>UPDATE</code></li>
+</ul>
+<h3>💡 Compétences mobilisées</h3>
+<ul>
+<li>Développement web dynamique en <strong>PHP avec PDO</strong></li>
+<li>Requêtes <strong>SQL</strong> (SELECT, UPDATE)</li>
+<li>Manipulation de <strong>paramètres GET</strong> dans les URL</li>
+<li>Organisation du code en fichiers séparés (<code>db.php</code>, <code>index2.php</code>, <code>DetailsPays.php</code>)</li>
+</ul>
+<hr>
+<h2>✅ TP 2 – Recherche de films &amp; acteurs avec l'API TMDb</h2>
+<blockquote>
+<p><strong>FICHE DESCRIPTIVE :</strong></p>
+<ul>
+<li><strong>Sujet :</strong> Utilisation d'une API externe (The Movie Database)</li>
+<li><strong>Langages :</strong> PHP, HTML/CSS</li>
+<li><strong>Outil externe :</strong> TMDb API</li>
+</ul>
+<p><strong>Objectif :</strong> Créer une application de recherche interactive de films et d'acteurs via des formulaires HTML et une API REST.</p>
+</blockquote>
+<h3>📋 Présentation</h3>
+<p>Ce TP combine formulaires HTML et appel à une API externe pour réaliser une recherche interactive. L'utilisateur peut rechercher un film ou un acteur, et l'application affiche les résultats (affiches, photos de profil) en interrogeant l'API TMDb en temps réel.</p>
+<h3>🛠️ Fonctionnalités principales</h3>
+<ul>
+<li>Formulaire de recherche de <strong>films</strong> (<code>movie.php</code>)</li>
+<li>Formulaire de recherche d'<strong>acteurs</strong> (<code>name.php</code>)</li>
+<li>Affichage des résultats : affiches, noms, informations</li>
+</ul>
+<h3>💡 Compétences mobilisées</h3>
+<ul>
+<li>Consommation d'une <strong>API REST</strong> en PHP</li>
+<li>Utilisation des méthodes <strong>GET / POST</strong> dans les formulaires HTML</li>
+<li>Traitement des données JSON retournées par l'API</li>
+</ul>
+<hr>
+<h2>🎓 Deuxième année de BTS SIO</h2>
+<hr>
+<h2>✅ TP 3 – SavonApi : application de gestion de recettes de savons</h2>
+<blockquote>
+<p><strong>FICHE DESCRIPTIVE :</strong></p>
+<ul>
+<li><strong>Sujet :</strong> Consommation d'une API REST fournie par le professeur</li>
+<li><strong>Langages :</strong> TypeScript, HTML, CSS</li>
+<li><strong>Framework :</strong> Angular</li>
+<li><strong>Lien GitHub :</strong> <a href="https://github.com/AkramanSou/SavonApi">AkramanSou/SavonApi</a></li>
+</ul>
+<p><strong>Objectif :</strong> Développer une application web Angular permettant de gérer des recettes de savons via une API REST.</p>
+</blockquote>
+<h3>📋 Présentation</h3>
+<p>Dans ce projet, une API REST a été fournie par le professeur. L'objectif était de créer une application Angular capable de communiquer avec cette API pour créer, afficher et enregistrer des recettes de savons. C'est ma première expérience avec le framework Angular et le développement frontend en TypeScript.</p>
+<h3>🛠️ Fonctionnalités principales</h3>
+<ul>
+<li><strong>Affichage</strong> de la liste des recettes disponibles</li>
+<li><strong>Création</strong> d'une nouvelle recette via un formulaire</li>
+<li><strong>Enregistrement</strong> des recettes en communiquant avec l'API REST</li>
+<li>Navigation entre les différentes vues grâce au <strong>routing Angular</strong></li>
+</ul>
+<h3>💡 Compétences mobilisées</h3>
+<ul>
+<li>Développement frontend avec <strong>Angular</strong> (composants, services, routing)</li>
+<li>Langage <strong>TypeScript</strong></li>
+<li>Consommation d'une <strong>API REST</strong> (requêtes HTTP GET/POST)</li>
+<li>Gestion de l'état de l'application avec des <strong>services Angular</strong></li>
+</ul>
+<hr>
+<h2>✅ TP 4 – eCommerce2 : site de vente d'équipements de boxe</h2>
+<blockquote>
+<p><strong>FICHE DESCRIPTIVE :</strong></p>
+<ul>
+<li><strong>Sujet :</strong> Création d'un site e-commerce</li>
+<li><strong>Langages :</strong> HTML, CSS, JavaScript, Kotlin</li>
+<li><strong>Lien GitHub :</strong> <a href="https://github.com/AkramanSou/eCommerce2">AkramanSou/eCommerce2</a></li>
+</ul>
+<p><strong>Objectif :</strong> Concevoir et développer un site e-commerce de vente d'équipements de boxe avec un catalogue produits et une interface utilisateur soignée.</p>
+</blockquote>
+<h3>📋 Présentation</h3>
+<p>Ce projet consiste en la réalisation d'un site e-commerce dédié à la vente d'équipements de boxe (gants, protège-dents, sacs de frappe...). L'accent a été mis sur la qualité de l'interface utilisateur et la présentation des produits. C'est un projet qui m'a particulièrement motivé car il combine ma passion pour le sport et le développement web.</p>
+<h3>🛠️ Fonctionnalités principales</h3>
+<ul>
+<li><strong>Catalogue produits</strong> avec présentation des équipements de boxe</li>
+<li><strong>Interface responsive</strong> adaptée mobile et desktop</li>
+<li>Navigation fluide entre les catégories de produits</li>
+<li>Design soigné et cohérent avec l'univers de la boxe</li>
+</ul>
+<h3>💡 Compétences mobilisées</h3>
+<ul>
+<li>Développement web <strong>HTML / CSS / JavaScript</strong></li>
+<li>Intégration de logique backend avec <strong>Kotlin</strong></li>
+<li>Conception d'une <strong>interface utilisateur</strong> orientée e-commerce</li>
+<li>Gestion de projet et versioning avec <strong>Git / GitHub</strong></li>
+</ul>
     
     </main>
 

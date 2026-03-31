@@ -29,7 +29,7 @@ Ce TP consiste à créer une application web en PHP permettant de récupérer et
 - Détail d'un pays : drapeau, population, superficie, capitale
 - **Formulaire de mise à jour** : modification de la population et de l'espérance de vie via une requête SQL `UPDATE`
 
-### 💡 Compétences mobilisées
+### 💡 Compétences mobilisées 
 
 - Développement web dynamique en **PHP avec PDO**
 - Requêtes **SQL** (SELECT, UPDATE)

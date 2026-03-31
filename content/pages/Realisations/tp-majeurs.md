@@ -74,7 +74,7 @@ Ce TP combine formulaires HTML et appel à une API externe pour réaliser une re
 
 > **FICHE DESCRIPTIVE :**
 >
-> - **Sujet :** Consommation d'une API REST fournie par le professeur
+> - **Sujet :** Consommation d'une API REST
 > - **Langages :** TypeScript, HTML, CSS
 > - **Framework :** Angular
 > - **Lien GitHub :** [AkramanSou/SavonApi](https://github.com/AkramanSou/SavonApi)
@@ -83,7 +83,7 @@ Ce TP combine formulaires HTML et appel à une API externe pour réaliser une re
 
 ### 📋 Présentation
 
-Dans ce projet, une API REST a été fournie par le professeur. L'objectif était de créer une application Angular capable de communiquer avec cette API pour créer, afficher et enregistrer des recettes de savons. C'est ma première expérience avec le framework Angular et le développement frontend en TypeScript.
+Dans ce projet, l'objectif était de créer une application Angular capable de communiquer avec cette API pour créer, afficher et enregistrer des recettes de savons.
 
 ### 🛠️ Fonctionnalités principales
 

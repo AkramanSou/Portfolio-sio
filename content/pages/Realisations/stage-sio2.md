@@ -66,7 +66,7 @@ et faciliter la **prise de contact** des clients potentiels.
 
 ### 💡 Compétences mobilisées
 
-- Développement web (**HTML, CSS, JavaScript**).
+- Développement web (**HTML, CSS,**).
 - Intégration avec **Bootstrap** pour le responsive design.
 - Communication avec le responsable pour recueillir ses besoins.
 - Sens de l'esthétique et de l'ergonomie web.

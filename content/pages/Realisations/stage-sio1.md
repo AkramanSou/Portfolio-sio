@@ -86,7 +86,7 @@ Permettre au président du club de **publier facilement des articles** et actual
 ### 🛠️ Tâches réalisées
 - Analyse du fonctionnement du site existant (*technologies utilisées*).  
 - Création d’un **espace d’administration** simple permettant l’ajout, la modification et la suppression d’articles.  
-- Intégration du système au site principal (*HTML, CSS, PHP ou JavaScript selon le besoin*).  
+- Intégration du système au site principal (*HTML, CSS, PHP*).  
 - Tests et validation avec l’utilisateur final (*le président du club*).
 
 ### 💡 Compétences mobilisées

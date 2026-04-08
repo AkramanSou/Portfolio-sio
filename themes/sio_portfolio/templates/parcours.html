@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Mon Parcours{% endblock %}
+
+{% block content %}
+
+<!-- En-tête -->
+<div class="inter-header mb-5">
+    <div class="d-flex align-items-center gap-3 mb-2">
+        <i class="bi bi-mortarboard inter-header-icon"></i>
+        <h1 class="inter-title m-0">Mon Parcours</h1>
+    </div>
+    <p class="inter-subtitle">Découvrez mon parcours scolaire et professionnel.</p>
+</div>
+
+<!-- Cards -->
+<div class="row g-4">
+
+    <div class="col-md-6">
+        <a href="{{ SITEURL }}/pages/parcours-scolaire" class="inter-card-link">
+            <div class="inter-card h-100">
+                <div class="inter-card-accent"></div>
+                <div class="inter-card-body">
+                    <div class="inter-card-icon">
+                        <i class="bi bi-person-graduation"></i>
+                    </div>
+                    <h5 class="inter-card-title">Parcours scolaire</h5>
+                    <p class="inter-card-desc">Présentation de mon cursus scolaire avant et pendant le BTS SIO.</p>
+                </div>
+                <div class="inter-card-footer">
+                    <span class="inter-read-more">Consulter <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-6">
+        <a href="{{ SITEURL }}/pages/bts-sio" class="inter-card-link">
+            <div class="inter-card h-100">
+                <div class="inter-card-accent"></div>
+                <div class="inter-card-body">
+                    <div class="inter-card-icon">
+                        <i class="bi bi-laptop"></i>
+                    </div>
+                    <h5 class="inter-card-title">Le BTS SIO</h5>
+                    <p class="inter-card-desc">Présentation du BTS Services Informatiques aux Organisations et de l'option SLAM.</p>
+                </div>
+                <div class="inter-card-footer">
+                    <span class="inter-read-more">Consulter <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+{% endblock %}

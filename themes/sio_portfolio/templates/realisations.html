@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}Réalisations{% endblock %}
+
+{% block content %}
+
+<!-- En-tête -->
+<div class="inter-header mb-5">
+    <div class="d-flex align-items-center gap-3 mb-2">
+        <i class="bi bi-check2-square inter-header-icon"></i>
+        <h1 class="inter-title m-0">Réalisations</h1>
+    </div>
+    <p class="inter-subtitle">Les activités majeures de ma formation scolaire & personnelle.</p>
+</div>
+
+<!-- Cards -->
+<div class="row g-4">
+
+    <div class="col-md-6">
+        <a href="{{ SITEURL }}/pages/tp-majeurs" class="inter-card-link">
+            <div class="inter-card h-100">
+                <div class="inter-card-accent"></div>
+                <div class="inter-card-body">
+                    <div class="inter-card-icon">
+                        <i class="bi bi-check2-square"></i>
+                    </div>
+                    <h5 class="inter-card-title">TP Majeurs</h5>
+                    <p class="inter-card-desc">Travaux pratiques majeurs réalisés durant ma formation BTS SIO SLAM.</p>
+                </div>
+                <div class="inter-card-footer">
+                    <span class="inter-read-more">Consulter <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-6">
+        <a href="{{ SITEURL }}/pages/stage-sio1" class="inter-card-link">
+            <div class="inter-card h-100">
+                <div class="inter-card-accent"></div>
+                <div class="inter-card-body">
+                    <div class="inter-card-icon">
+                        <i class="bi bi-briefcase"></i>
+                    </div>
+                    <h5 class="inter-card-title">Stage de 1ère année</h5>
+                    <p class="inter-card-desc">Stage au Club de Judo de l'Almont — Développement web & gestion Excel.</p>
+                </div>
+                <div class="inter-card-footer">
+                    <span class="inter-badge">Mai – Juin 2024</span>
+                    <span class="inter-read-more">Consulter <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-6">
+        <a href="{{ SITEURL }}/pages/stage-sio2" class="inter-card-link">
+            <div class="inter-card h-100">
+                <div class="inter-card-accent"></div>
+                <div class="inter-card-body">
+                    <div class="inter-card-icon">
+                        <i class="bi bi-briefcase-fill"></i>
+                    </div>
+                    <h5 class="inter-card-title">Stage de 2ème année</h5>
+                    <p class="inter-card-desc">Stage chez Vay Sécurité Privée — Refonte du site vitrine & gestion des plannings.</p>
+                </div>
+                <div class="inter-card-footer">
+                    <span class="inter-badge">Mai – Juin 2025</span>
+                    <span class="inter-read-more">Consulter <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+</div>
+
+{% endblock %}

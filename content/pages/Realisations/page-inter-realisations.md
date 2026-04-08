@@ -1,4 +1,6 @@
 Title: Réalisations
+Template: realisations
+Save_as: pages/realisations.html
 
 # Les activités majeures de ma formation scolaire & personnel :
 

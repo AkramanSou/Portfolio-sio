@@ -1,4 +1,6 @@
-Title: Parcours
+Title: Mon Parcours
+Template: parcours
+Save_as: pages/parcours.html
 
 # Mon parcours scolaire :
 

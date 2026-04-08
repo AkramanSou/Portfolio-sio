@@ -19,6 +19,10 @@ Save_as: pages/tp-majeurs.html
 >
 > **Objectif :** Manipuler et afficher des données issues d'une base relationnelle via des pages PHP dynamiques.
 
+<a href="../theme/images/tp-geoworld.png" target="_blank">
+    <img src="../theme/images/tp-geoworld.png" alt="Aperçu GeoWorld" style="width: 100%; max-width: 1000px; border-radius: 8px; margin: 1rem 0; cursor: pointer;">
+</a>
+
 ### 📋 Présentation
 
 Ce TP consiste à créer une application web en PHP permettant de récupérer et afficher des données géographiques depuis une base MySQL. L'utilisateur peut naviguer entre les continents, consulter les pays et leurs informations (population, superficie, drapeau, capitale), et mettre à jour certaines données via un formulaire.
@@ -29,7 +33,7 @@ Ce TP consiste à créer une application web en PHP permettant de récupérer et
 - Détail d'un pays : drapeau, population, superficie, capitale
 - **Formulaire de mise à jour** : modification de la population et de l'espérance de vie via une requête SQL `UPDATE`
 
-### 💡 Compétences mobilisées 
+### 💡 Compétences mobilisées
 
 - Développement web dynamique en **PHP avec PDO**
 - Requêtes **SQL** (SELECT, UPDATE)
@@ -48,14 +52,18 @@ Ce TP consiste à créer une application web en PHP permettant de récupérer et
 >
 > **Objectif :** Créer une application de recherche interactive de films et d'acteurs via des formulaires HTML et une API REST.
 
+<a href="../theme/images/tp-cineworld.png" target="_blank">
+    <img src="../theme/images/tp-cineworld.png" alt="Aperçu GeoWorld" style="width: 100%; max-width: 1000px; border-radius: 8px; margin: 1rem 0; cursor: pointer;">
+</a>
+
 ### 📋 Présentation
 
 Ce TP combine formulaires HTML et appel à une API externe pour réaliser une recherche interactive. L'utilisateur peut rechercher un film ou un acteur, et l'application affiche les résultats (affiches, photos de profil) en interrogeant l'API TMDb en temps réel.
 
 ### 🛠️ Fonctionnalités principales
 
-- Formulaire de recherche de **films** (`movie.php`)
-- Formulaire de recherche d'**acteurs** (`name.php`)
+- Formulaire de recherche de **films**
+- Formulaire de recherche d'**acteurs**
 - Affichage des résultats : affiches, noms, informations
 
 ### 💡 Compétences mobilisées
@@ -74,7 +82,7 @@ Ce TP combine formulaires HTML et appel à une API externe pour réaliser une re
 
 > **FICHE DESCRIPTIVE :**
 >
-> - **Sujet :** Consommation d'une API REST
+> - **Sujet :** Consommation d'une API REST fournie par le professeur
 > - **Langages :** TypeScript, HTML, CSS
 > - **Framework :** Angular
 > - **Lien GitHub :** [AkramanSou/SavonApi](https://github.com/AkramanSou/SavonApi)
@@ -83,7 +91,7 @@ Ce TP combine formulaires HTML et appel à une API externe pour réaliser une re
 
 ### 📋 Présentation
 
-Dans ce projet, l'objectif était de créer une application Angular capable de communiquer avec cette API pour créer, afficher et enregistrer des recettes de savons.
+Dans ce projet, une API REST a été fournie par le professeur. L'objectif était de créer une application Angular capable de communiquer avec cette API pour créer, afficher et enregistrer des recettes de savons. C'est ma première expérience avec le framework Angular et le développement frontend en TypeScript.
 
 ### 🛠️ Fonctionnalités principales
 
@@ -110,6 +118,10 @@ Dans ce projet, l'objectif était de créer une application Angular capable de c
 > - **Lien GitHub :** [AkramanSou/eCommerce2](https://github.com/AkramanSou/eCommerce2)
 >
 > **Objectif :** Concevoir et développer un site e-commerce de vente d'équipements de boxe avec un catalogue produits et une interface utilisateur soignée.
+
+<a href="../theme/images/tp-ecommerce.png" target="_blank">
+    <img src="../theme/images/tp-ecommerce.png" alt="Aperçu GeoWorld" style="width: 100%; max-width: 1000px; border-radius: 8px; margin: 1rem 0; cursor: pointer;">
+</a>
 
 ### 📋 Présentation
 
